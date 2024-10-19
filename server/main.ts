@@ -8,8 +8,6 @@ async function insertLink({ title, url }: { title: string; url: string }) {
     await LinksCollection.insertAsync({ title, url, createdAt: new Date() });
 }
 
-
-
 Meteor.startup(async () => {
     FileCollection.find();
     // If the Links collection is empty, add some data.

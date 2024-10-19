@@ -8,8 +8,8 @@
         "visualize": "meteor --production --extra-packages bundle-visualizer"
     },
     "dependencies": {
-        "@babel/runtime": "^7.20.7",
-        "@vitejs/plugin-react": "^4.3.2",
+        "@babel/runtime": "^7.25.7",
+        "@vitejs/plugin-react": "^4.3.3",
         "eventemitter3": "^5.0.1",
         "intro.js": "^7.2.0",
         "intro.js-react": "^1.0.0",
@@ -19,21 +19,21 @@
         "zod": "^3.23.8"
     },
     "devDependencies": {
-        "@babel/preset-typescript": "^7.24.7",
-        "@babel/runtime": "^7.25.6",
+        "@babel/preset-typescript": "^7.25.7",
+        "@babel/runtime": "^7.25.7",
         "@meteor-vite/plugin-zodern-relay": "^1.0.5",
-        "@types/react": "^18.3.10",
-        "@types/react-dom": "^18.3.0",
+        "@types/react": "^18.3.11",
+        "@types/react-dom": "^18.3.1",
         "@zodern/babel-plugin-meteor-relay": "^1.1.4",
-        "esbuild": "^0.23.0",
-        "meteor-vite": "^2.0.0-next.3",
-        "typescript": "^5.6.2",
+        "esbuild": "^0.24.0",
+        "meteor-vite": "^1.11.1",
+        "typescript": "^5.6.3",
         "vite": "^4.5.5"
     },
     "meteor": {
         "mainModule": {
             "client": "client/entrypoint.ts",
-            "server": "server/main.ts"
+            "server": "server/main.meteor.js"
         },
         "testModule": "tests/main.js"
     }
