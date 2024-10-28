@@ -1,9 +1,11 @@
 import { Meteor } from "meteor/meteor";
 import { Mongo } from "meteor/mongo";
-import { FilesCollection } from "meteor/ostrio:files";
 import { _createClientMethod } from "meteor/zodern:relay/client";
+import { FilesCollection } from "meteor/ostrio:files";
 import { WebAppInternals } from "meteor/webapp";
 import { getConfig } from "meteor/jorgenvatle:vite-bundler/loading/vite-connection-handler";
+_createClientMethod("links.get");
+_createClientMethod("testing.zodern");
 const LinksCollection = new Mongo.Collection("links");
 const FileCollection = new FilesCollection({
   storagePath: `images`,
@@ -11,8 +13,6 @@ const FileCollection = new FilesCollection({
   // Disallow Client to execute remove, use the Meteor.method
   allowClientCode: false
 });
-_createClientMethod("links.get");
-_createClientMethod("testing.zodern");
 if (Meteor.isDevelopment) {
   WebAppInternals.registerBoilerplateDataCallback(
     "react-preamble",

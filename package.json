@@ -8,25 +8,25 @@
         "visualize": "meteor --production --extra-packages bundle-visualizer"
     },
     "dependencies": {
-        "@babel/runtime": "^7.25.7",
+        "@babel/runtime": "^7.26.0",
         "@vitejs/plugin-react": "^4.3.3",
         "eventemitter3": "^5.0.1",
         "intro.js": "^7.2.0",
         "intro.js-react": "^1.0.0",
-        "meteor-node-stubs": "^1.2.10",
+        "meteor-node-stubs": "^1.2.11",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "zod": "^3.23.8"
     },
     "devDependencies": {
-        "@babel/preset-typescript": "^7.25.7",
-        "@babel/runtime": "^7.25.7",
-        "@meteor-vite/plugin-zodern-relay": "^1.0.5",
-        "@types/react": "^18.3.11",
+        "@babel/preset-typescript": "^7.26.0",
+        "@babel/runtime": "^7.26.0",
+        "@meteor-vite/plugin-zodern-relay": "^1.0.6",
+        "@types/react": "^18.3.12",
         "@types/react-dom": "^18.3.1",
         "@zodern/babel-plugin-meteor-relay": "^1.1.4",
         "esbuild": "^0.24.0",
-        "meteor-vite": "^1.11.1",
+        "meteor-vite": "^1.12.0",
         "typescript": "^5.6.3",
         "vite": "^4.5.5"
     },
