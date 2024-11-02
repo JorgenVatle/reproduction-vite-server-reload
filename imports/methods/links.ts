@@ -21,6 +21,6 @@ export const testMessage = createMethod({
     name: "testing.zodern",
     schema: z.object({}),
     run: async () => {
-        return "Hello World";
+        return "Hello World Cool!";
     },
 });

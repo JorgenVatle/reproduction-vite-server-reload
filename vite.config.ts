@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react";
 import { meteor } from "meteor-vite/plugin";
 import localZodernRelay from "./vite-plugins/local-zodern-relay";
 
-
 export default defineConfig({
     plugins: [
         react({
@@ -18,6 +17,7 @@ export default defineConfig({
             meteorStubs: {
                 debug: false,
             },
+            enableExperimentalFeatures: true,
         }),
         localZodernRelay({
             directories: {

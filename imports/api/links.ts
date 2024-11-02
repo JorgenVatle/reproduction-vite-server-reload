@@ -1,4 +1,5 @@
 import { Mongo } from 'meteor/mongo';
+import { testMessage } from "/imports/methods/links";
 
 export type Link = {
     _id: string;
@@ -8,3 +9,7 @@ export type Link = {
 };
 
 export const LinksCollection = new Mongo.Collection<Link>('links');
+
+async function test() {
+    return await testMessage({});
+}
